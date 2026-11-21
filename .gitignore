@@ -12,7 +12,16 @@ __pycache__/
 .env
 .env.*
 !.env.example
+vehdetect_env/
 
 # Temporary files
 *.log
 .ipynb_checkpoints/
+
+
+render_test_env/
+vehdetect_env/
+venv/
+.venv/
+__pycache__/
+*.log
