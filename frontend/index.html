@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#091324" />
+  <meta name="description" content="VehDetect — AI-powered vehicle damage inspection." />
+  <title>VehDetect | AI Vehicle Damage Detection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="VehDetect home"><span class="brand-mark">V<span>.</span></span><span>VehDetect</span></a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#features">Capabilities</a><a href="#detector">Damage Detection</a></nav>
+    <a class="nav-cta" href="#detector">Launch inspection <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> SMARTER VEHICLE INSPECTIONS</div>
+          <h1>See the damage.<br /><span>Know the details.</span></h1>
+          <p>AI-powered vehicle damage analysis, designed to make every inspection faster, clearer, and more effortless.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#detector">Inspect your vehicle <span>↗</span></a><a class="text-link" href="#features">Explore capabilities <span>→</span></a></div>
+          <div class="hero-stats"><div><strong>06</strong><span>Damage categories</span></div><div class="stat-divider"></div><div><strong>01</strong><span>Image to get started</span></div><div class="stat-divider"></div><div><strong>AI</strong><span>Powered analysis</span></div></div>
+        </div>
+
+
+<div class="hero-art">
+    <img src="hero-car.png"
+         alt="AI-assisted vehicle damage detection"
+         class="hero-car-image">
+
+          <div class="photo-overlay"></div>
+          <div class="hero-photo-label"><span class="label-indicator"></span><div><small>VEHDETECT VISION</small><strong>Vehicle inspection, reimagined.</strong></div></div>
+          <div class="floating-tag"><span>✦</span> INTELLIGENT ANALYSIS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section-wrap" id="features">
+      <div class="section-intro"><div><span class="section-kicker">WHAT VEHDETECT CAN IDENTIFY</span><h2>One image. <span>Six damage types.</span></h2></div><p>From small surface marks to visible component damage, our model evaluates multiple damage categories in a single inspection.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">◈</span><div><span class="feature-number">01 / SURFACE</span><h3>Dent</h3><p>Visible body-panel deformations.</p></div></article>
+        <article class="feature-card"><span class="feature-icon">╱</span><div><span class="feature-number">02 / SURFACE</span><h3>Scratch</h3><p>Marks across exterior paintwork.</p></div></article>
+        <article class="feature-card"><span class="feature-icon">⌁</span><div><span class="feature-number">03 / STRUCTURAL</span><h3>Crack</h3><p>Visible splits in vehicle components.</p></div></article>
+        <article class="feature-card"><span class="feature-icon">✳</span><div><span class="feature-number">04 / GLASS</span><h3>Glass shatter</h3><p>Broken or shattered glass surfaces.</p></div></article>
+        <article class="feature-card"><span class="feature-icon">◉</span><div><span class="feature-number">05 / LIGHTING</span><h3>Lamp broken</h3><p>Damage to exterior light units.</p></div></article>
+        <article class="feature-card"><span class="feature-icon">◎</span><div><span class="feature-number">06 / WHEELS</span><h3>Tire flat</h3><p>Visible signs of flat tires.</p></div></article>
+      </div>
+    </section>
+
+    <section class="inspection-section" id="detector">
+      <div class="section-wrap inspection-layout">
+        <div class="inspection-copy"><span class="section-kicker">YOUR INSPECTION STARTS HERE</span><h2>Upload a photo.<br /><span>Reveal the details.</span></h2><p>Choose a clear photo of your vehicle. VehDetect will prepare it for analysis and show the results in an easy-to-read format.</p><div class="step-list"><div><span>01</span><div><strong>Upload</strong><small>Select a vehicle photo from your device.</small></div></div><div><span>02</span><div><strong>Analyze</strong><small>Run the inspection using the prediction button.</small></div></div><div><span>03</span><div><strong>Review</strong><small>See identified categories and confidence scores.</small></div></div></div></div>
+        <div class="detector-card"><div class="card-top"><div><span class="card-eyebrow">VEHDETECT / INSPECTION</span><h3>Vehicle damage scan</h3></div><span class="ready-chip"><i></i> READY</span></div>
+          <div class="upload-area" id="uploadArea"><input type="file" id="imageInput" accept="image/png,image/jpeg" hidden /><div id="uploadContent"><div class="upload-symbol">↑</div><h4>Drop your vehicle image here</h4><p>Drag & drop your photo, or <button id="browseButton" type="button">browse files</button></p><small>JPG or PNG · Maximum 10 MB</small></div><div id="previewContainer" class="preview-container hidden"><img id="imagePreview" alt="Uploaded vehicle preview" /><button id="removeImage" type="button">✕ Remove image</button></div></div>
+          <button id="predictButton" class="button button-primary predict-button" disabled>Predict damage <span>↗</span></button><p id="message" class="message" role="status">Upload an image to enable prediction.</p>
+          <div id="results" class="results hidden"><div class="results-head"><h4>Inspection results</h4><span id="resultTag" class="result-tag">RESULTS</span></div><div id="resultList"></div><button id="resetButton" class="reset-button" type="button">Inspect another image →</button></div>
+          <div class="card-footer"><span>◈</span> Secure local inspection interface <span class="footer-dot">•</span> Image-based analysis</div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="section-wrap footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">V<span>.</span></span><span>VehDetect</span></a><p>AI-powered vehicle damage detection.</p><small>© 2026 VehDetect. All rights reserved.</small></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+    "model": "EfficientNetB0",
+    "dataset": "CarDD_COCO",
+    "classes": [
+        "dent",
+        "scratch",
+        "crack",
+        "glass shatter",
+        "lamp broken",
+        "tire flat"
+    ],
+    "image_size": [
+        224,
+        224
+    ],
+    "batch_size": 32,
+    "train_images": 2816,
+    "validation_images": 810,
+    "test_images": 374,
+    "thresholds_tuned_on": "validation",
+    "thresholds": {
+        "dent": 0.6000000238418579,
+        "scratch": 0.3799999952316284,
+        "crack": 0.27000001072883606,
+        "glass shatter": 0.6399999856948853,
+        "lamp broken": 0.38999998569488525,
+        "tire flat": 0.41999998688697815
+    },
+    "test_metrics": {
+        "macro_f1": 0.7781276663744036,
+        "micro_f1": 0.7791095890410958,
+        "weighted_f1": 0.7842148726820871,
+        "per_class": {
+            "dent": {
+                "precision": 0.7898089171974523,
+                "recall": 0.7898089171974523,
+                "f1": 0.7898089171974523,
+                "support": 157
+            },
+            "scratch": {
+                "precision": 0.7272727272727273,
+                "recall": 0.8743169398907104,
+                "f1": 0.794044665012407,
+                "support": 183
+            },
+            "crack": {
+                "precision": 0.4714285714285714,
+                "recall": 0.6875,
+                "f1": 0.559322033898305,
+                "support": 48
+            },
+            "glass shatter": {
+                "precision": 0.9545454545454546,
+                "recall": 0.8873239436619719,
+                "f1": 0.9197080291970803,
+                "support": 71
+            },
+            "lamp broken": {
+                "precision": 0.676056338028169,
+                "recall": 0.7384615384615385,
+                "f1": 0.7058823529411765,
+                "support": 65
+            },
+            "tire flat": {
+                "precision": 0.9310344827586207,
+                "recall": 0.8709677419354839,
+                "f1": 0.9,
+                "support": 31
+            }
+        }
+    },
+    "training_time_seconds": 10877.51955318451,
+    "training_time_minutes": 181.29199255307515
+}
