@@ -12,7 +12,7 @@ from PIL import Image, ImageOps
 BASE_DIR = Path(__file__).resolve().parent
 FRONTEND_DIR = BASE_DIR.parent / "frontend"
 
-MODEL_PATH = BASE_DIR / "efficientnetb0_cardd_final.keras"
+MODEL_PATH = BASE_DIR / "efficientnetb0_cardd_render.keras"
 SETTINGS_PATH = BASE_DIR / "settings.json"
 
 app = Flask(__name__)
